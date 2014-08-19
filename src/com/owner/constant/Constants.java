@@ -1,5 +1,6 @@
 package com.owner.constant;
 
+import java.lang.reflect.Type;
 import java.util.List;
 
 import com.google.gson.Gson;
@@ -17,7 +18,6 @@ import com.owner.entity.Privilege;
 import com.owner.entity.Restaurant;
 import com.owner.entity.Train;
 
-import android.renderscript.Type;
 
 
 public class Constants {
@@ -25,6 +25,8 @@ public class Constants {
    public static final String SERVER_URL="http://www.tuling123.com/openapi/api";
    
    public static final Gson gson = new GsonBuilder().create();
+   
+   //public static final Type data_type=(Type) new TypeToken<List<Train>>(){}.getType();
    
    public static final Type app_list_type=(Type) new TypeToken<List<App>>(){}.getType();
    public static final Type flight_list_type=(Type) new TypeToken<List<Flight>>(){}.getType();
